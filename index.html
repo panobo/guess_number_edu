@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hádej číslo!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hádej číslo!</h1>
+      <p class="between">(Mezi 1 a 20)</p>
+      <button class="btn again">Znovu!</button>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" min="0" max="20" />
+        <button class="btn check">Srovnej</button>
+        <br />
+        <!-- <button class="btn clear">Again</button> -->
+      </section>
+      <section class="right">
+        <p class="message">Začni hádat...</p>
+        <p class="label-score">💯 Skóre: <span class="score">?</span></p>
+        <p class="label-highscore">
+          🥇 Nejlepší: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
